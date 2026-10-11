@@ -42,7 +42,7 @@ Sealed baseline: 23.25 ± 0.43 dB average level, 1.86 ± 0.03 dB RMS deviation.
 - Going from the shortest to the longest port lowered average output by about **0.9 dB**. Its effect on flatness was not statistically significant.
 - Both significant trends agree in direction with lumped-parameter predictions (output rises with port area and falls with port length). However, the predicted Helmholtz resonances (about 31 to 641 Hz across the tested ports) fall largely outside the 126 to 500 Hz analysis band. This limits how directly the theory can be tested here; see [Limitations](#limitations).
 
-![caption](report/poster_graphs.png)
+![Poster Graphs](report/poster_graphs.png)
 
 ## Experimental Setup
 
