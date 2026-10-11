@@ -7,8 +7,8 @@
 ![Course](https://img.shields.io/badge/MIT-2.671-8A1538?style=flat-square)
 
 <p align="center">
-  <img src="images/Isometric%20View.png" alt="Isometric view of the speaker enclosure" height="46%">
-  <img src="images/Section%20View.png" alt="Cross-section view of the speaker enclosure" height="46%">
+  <img src="images/Isometric%20View.png" alt="Isometric view of the speaker enclosure" height="500px">
+  <img src="images/Section%20View.png" alt="Cross-section view of the speaker enclosure" height="500px">
 </p>
 
 Carter Tucker, MIT 2.671 Measurement and Instrumentation (Spring 2026)
