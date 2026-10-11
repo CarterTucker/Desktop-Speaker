@@ -29,7 +29,7 @@ These were measured across four port diameters plus a sealed baseline, and five 
 
 ## Headline Findings
 
-| Parameter | Metric | Slope | 95% CI | Significant |
+| Parameter | Metric | Slope | 95% CI | Statistically Significant |
 |---|---|---|---|---|
 | Diameter (17.5 to 70 mm) | Average volume | +0.042 dB/mm | [0.033, 0.052] | Yes |
 | Diameter (17.5 to 70 mm) | RMS deviation | -0.012 dB/mm | [-0.015, -0.009] | Yes |
@@ -47,11 +47,11 @@ Sealed baseline: 23.25 ± 0.43 dB average level, 1.86 ± 0.03 dB RMS deviation.
 ## Experimental Setup
 
 <p align="center">
-  <img src="images/Modified%20Speaker%20Isometric.png" alt="Modified speaker isometric view" width="46%">
-  <img src="images/Modified%20Speaker%20Section.png" alt="Modified speaker cross-section" width="46%">
+  <img src="images/Modified%20Speaker%20Isometric.png" alt="Modified speaker isometric view" height="500px">
+  <img src="images/Modified%20Speaker%20Section.png" alt="Modified speaker cross-section" height="500px">
 </p>
 
-> **TODO:** One-line caption explaining the "Modified" renders (what changed, e.g. the lid and port interface).
+The initial speaker enclosure was build to be used as a personal desktop speaker. The enclosure top was modified to so that ports could be press-fit for each experiment. The previous port was closed for the experiment.
 
 ```
 Computer / USB (sweep_sine.wav)
@@ -86,8 +86,6 @@ Computer / USB (sweep_sine.wav)
 - **Printer:** Bambu Lab P1S.
 - **Enclosure:** 4 walls, high infill (~50%).
 - **Ports (resonators):** 100% infill.
-
-> **TODO:** Confirm the infill figures above, add filament type, and add the STL files (the `.stl` files are not in the current folder tree).
 
 ### Test matrix
 
@@ -140,18 +138,16 @@ Desktop-Speaker/
 └── README.md
 ```
 
-> **TODO:** Fill in the file naming convention for the CSV and `.cmbl` files (for example, how port length, diameter, and trial number are encoded).
+Files were named with the convention length_[length in mm]_dia_[diameter*10 mm]_trial[trial number], for both CMBL files from LoggerPro, and CSV files.
 
 ## Reproducing the Analysis
-
-**Requirements:** MATLAB (**TODO:** version and toolboxes, likely Signal Processing and Curve Fitting for `cftool`).
 
 1. Clone the repo.
 2. Open MATLAB and set the working directory to `analysis_code/`.
 3. **TODO:** Name the main script (probably the highest-numbered `analyze_ports_*.m`) and state whether paths to `experimental_data_csv/` need editing.
 4. **TODO:** State the run order and outputs, e.g. which script produces the per-configuration metrics and which one, [`averaged_metrics_cftool.m`](analysis_code/averaged_metrics_cftool.m), produces the linear fits and plots.
 
-The `analyze_ports_*.m` files are successive iterations of the same analysis, kept for history. **TODO:** Mark which is final, or move older versions into `analysis_code/archive/`.
+The `analyze_ports_*.m` files are successive iterations of the same analysis, kept for history.
 
 ## Limitations
 
@@ -164,11 +160,7 @@ The `analyze_ports_*.m` files are successive iterations of the same analysis, ke
 
 ## Why I Built This
 
-> **TODO:** A short paragraph in your own voice: what drew you to speakers and acoustics, and why this question.
-
-## What I Learned
-
-> **TODO:** Two or three sentences on what surprised you (for example, how the sealed baseline compared to the ported cases) and what you would change next time.
+I built the speaker initially because I was interested in acoustics, and wanted to make my own desktop speaker that was cheaper than anything I could buy online, for the same power output. I used WinISD to optimize the port geometry initially, but I never knew how exactly the port worked. I knew it was acted a resonator, like blowing over a Coke bottle, but I didn't know how the dimensions of it improved the sound. For this reason, I ran an experiment, changing the port length and geometry, to find how specifically the resonator impacts sound.
 
 ## Citation
 
@@ -186,10 +178,6 @@ The `analyze_ports_*.m` files are successive iterations of the same analysis, ke
 
 Thanks to Prof. Sili Deng, Jeanne Wildman, and Kevin DiGenova for guidance and feedback, and to Dr. Kevin Cedrone for flexibility and support during equipment issues.
 
-## License
-
-> **TODO:** Choose a license (e.g. MIT for code, CC BY 4.0 for the report and CAD) and add a `LICENSE` file.
-
 ## Contact
 
-Carter Tucker: [LinkedIn](https://www.linkedin.com/in/TODO) | **TODO:** email or personal site
+Carter Tucker: [LinkedIn]([https://www.linkedin.com/in/TODO](https://www.linkedin.com/in/carter-tucker-36083b32a/))
